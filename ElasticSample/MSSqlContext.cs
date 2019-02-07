@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ElasticSample
 {
-    public class ElasticContext : DbContext
+    public class MSSqlContext : DbContext
     {
-        public ElasticContext(DbContextOptions<ElasticContext> options) : base(options)
+        public MSSqlContext(DbContextOptions<MSSqlContext> options) : base(options)
         { }
 
         public DbSet<Employee> Employee { get; set; }
